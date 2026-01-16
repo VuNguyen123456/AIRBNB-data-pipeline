@@ -5,6 +5,6 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "dbt-core>=1.11.2",         # The main dbt engine (writes SQL, runs tests, builds models)
-    "dbt-snowflake>=1.11.1",    # The adapter that lets dbt talk to Snowflake specifically, This is the "translator" between dbt and Snowflake
+    "dbt-core>=1.11.2",
+    "dbt-snowflake>=1.11.1",
 ]

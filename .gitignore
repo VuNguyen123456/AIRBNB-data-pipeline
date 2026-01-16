@@ -4,3 +4,4 @@ dbt_packages/
 .env
 logs/
 __pycache__/
+aws_dbt_snowflake_project/profiles.yml
