@@ -473,23 +473,7 @@ This project follows security best practices:
 - ✅ Code modularity and reusability
 - ✅ Documentation
 - ✅ Metadata-driven design patterns
-
----
-
-## 🎤 Interview Talking Points
-
-**"Tell me about a data pipeline you built"**
-
-> "I built an end-to-end data pipeline following medallion architecture. Starting with raw CSV files in AWS S3, I loaded data into Snowflake and used dbt to transform it through Bronze, Silver, and Gold layers. The Bronze layer preserves raw data with incremental loading to reduce costs by 80%. Silver applies business logic like categorizing host response rates. Gold creates both a metadata-driven One Big Table for easy analytics and a Star Schema with SCD Type 2 for historical tracking. I implemented custom Jinja macros for reusable logic and data quality tests to ensure pipeline reliability."
-
-**Key Metrics:**
-- 5,700+ records processed
-- 3 transformation layers
-- 80%+ cost reduction via incremental loading
-- SCD Type 2 historical tracking
-- Metadata-driven scalability
-
----
+  
 
 ## 📝 License
 
@@ -505,3 +489,4 @@ This is a learning project, but feedback and suggestions are welcome! Feel free 
 ---
 
 **Built with ❤️ using AWS, Snowflake, and dbt**
+
