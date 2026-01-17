@@ -1,7 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual Environments
 .venv/
+venv/
+ENV/
+env/
+.ENV
+.env.local
+
+# dbt artifacts
 target/
 dbt_packages/
-.env
 logs/
-__pycache__/
+*.log
+
+# Environment variables and secrets
+.env
+.env.local
+.env.*.local
+*.env
 aws_dbt_snowflake_project/profiles.yml
+
+# IDE and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Lock files (uncomment if you want to ignore lock files)
+# uv.lock
+# poetry.lock
+# Pipfile.lock
