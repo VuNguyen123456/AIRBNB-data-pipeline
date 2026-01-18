@@ -3,11 +3,10 @@
 ) }}
 
 {# This is an ephemeral model #}
-{# The 'bookings' query here is passed onto dim_bookings.yml #}
+{# The 'listings' query here is passed onto dim_listings.yml #}
+{# Deduplicates listings - takes most recent version if multiple rows exist for same LISTING_ID #}
 
--- Defines a temporary table called 'listings'
-WITH listings AS
-(
+WITH listings_with_rank AS (
     SELECT
         LISTING_ID,
         PROPERTY_TYPE,
@@ -15,8 +14,17 @@ WITH listings AS
         CITY,
         COUNTRY,
         PRICE_PER_NIGHT_TAG,
-        LISTING_CREATED_AT
+        LISTING_CREATED_AT,
+        ROW_NUMBER() OVER (PARTITION BY LISTING_ID ORDER BY LISTING_CREATED_AT DESC) as rn
     FROM {{ ref('obt') }}
 )
--- RETURNING THE FINAL RESULT  TO THE DIM_BOOKINGS MODEL
-SELECT * FROM listings
+SELECT
+    LISTING_ID,
+    PROPERTY_TYPE,
+    ROOM_TYPE,
+    CITY,
+    COUNTRY,
+    PRICE_PER_NIGHT_TAG,
+    LISTING_CREATED_AT
+FROM listings_with_rank
+WHERE rn = 1
