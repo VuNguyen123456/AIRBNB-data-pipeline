@@ -475,6 +475,62 @@ This project follows security best practices:
 - ✅ Metadata-driven design patterns
   
 
+## 📸 Gallery
+
+# Bronze Layer:
+bookings
+<img width="2550" height="1267" alt="bronze_layer_data_bookings png" src="https://github.com/user-attachments/assets/846f927c-fbaa-4342-9d0d-3186b5bf18e1" />
+hosts
+<img width="2548" height="1263" alt="bronze_layer_data_hosts png" src="https://github.com/user-attachments/assets/cbc3894c-978e-4fe3-bc6b-585cadd02e3a" />
+listings
+<img width="2545" height="1267" alt="bronze_layer_data_listings png" src="https://github.com/user-attachments/assets/6a005e7f-9def-4313-b977-c08d2193035c" />
+
+# Silver layer
+bookings
+<img width="2556" height="1265" alt="silver_layer_data_bookings png" src="https://github.com/user-attachments/assets/1d0edc90-dcda-4bed-96fc-802f66364a55" />
+hosts
+<img width="2552" height="1266" alt="silver_layer_data_hosts png" src="https://github.com/user-attachments/assets/30559a70-a8ee-4498-851d-3fd93a5f8269" />
+listings
+<img width="2550" height="1267" alt="silver_layer_data_listings png" src="https://github.com/user-attachments/assets/83b6f66e-dcde-48a7-9d75-eda027154d92" />
+
+# Gold layer
+One-Big-Table:
+<img width="2553" height="924" alt="gold_layer_data_obt png" src="https://github.com/user-attachments/assets/1c408a56-8d3f-43d8-b239-e2b7517d279b" />
+
+Star Schema:
+- Fact table:
+<img width="2555" height="1261" alt="gold_layer_data_fact png" src="https://github.com/user-attachments/assets/b92541bc-835f-469a-a708-950362b86c3e" />
+- Dimensions table:
+bookings
+<img width="2556" height="1267" alt="gold_layer_data_dim_bookings png" src="https://github.com/user-attachments/assets/897317e4-afae-48e2-b3a0-b9c5611c651d" />
+hosts
+<img width="2552" height="1267" alt="gold_layer_data_dim_hosts png" src="https://github.com/user-attachments/assets/e35d797c-5567-4345-8f81-fc334ad3fa0c" />
+listings
+<img width="2551" height="1270" alt="gold_layer_data_dim_listings png" src="https://github.com/user-attachments/assets/d1b69eb6-ea93-4e70-aa03-863db667e821" />
+
+# Slow changing dimension (SCD) type 2 - incremental loading
+<img width="2522" height="707" alt="snapshot after modification" src="https://github.com/user-attachments/assets/2508593a-dc8a-4da4-9d9b-b94d05fef0a4" />
+
+# Database:
+<img width="741" height="967" alt="db" src="https://github.com/user-attachments/assets/e4aa31ca-adad-454e-b675-5c252768d1cd" />
+
+# Building tables and snapshots in Snowflakes
+<img width="1084" height="737" alt="dbt-build png" src="https://github.com/user-attachments/assets/4baa1069-0278-487a-a669-c7c3626c5007" />
+
+# AWS S3
+<img width="2552" height="680" alt="aws s3" src="https://github.com/user-attachments/assets/d481032b-07a0-4daf-93aa-61093066c735" />
+
+# dbt docs
+<img width="2476" height="1227" alt="Screenshot 2026-01-18 164316" src="https://github.com/user-attachments/assets/32843e75-9f40-4027-a6dc-7ced9f5ca291" />
+
+<img width="2544" height="1266" alt="Screenshot 2026-01-18 163946" src="https://github.com/user-attachments/assets/5eb142c6-af5e-4797-8367-ca43bc5fc70e" />
+
+<img width="2497" height="1259" alt="Screenshot 2026-01-18 164051" src="https://github.com/user-attachments/assets/663a8fd4-59a0-4d8c-8529-6a5c65bc02fa" />
+
+<img width="2520" height="1262" alt="Screenshot 2026-01-18 164454" src="https://github.com/user-attachments/assets/54fc41b3-27e7-42e1-a4e0-0aec906ac3aa" />
+
+<img width="2533" height="1266" alt="Screenshot 2026-01-18 164631" src="https://github.com/user-attachments/assets/fa66af94-d880-458f-b479-98ff3ec59985" />
+
 ## 📝 License
 
 This project is open source and available for educational purposes.
@@ -489,4 +545,5 @@ This is a learning project, but feedback and suggestions are welcome! Feel free 
 ---
 
 **Built with ❤️ using AWS, Snowflake, and dbt**
+
 
