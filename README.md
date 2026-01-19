@@ -474,6 +474,8 @@ This project follows security best practices:
 - ✅ Documentation
 - ✅ Metadata-driven design patterns
   
+## Demo
+https://www.loom.com/share/d051218110d74a53a9abde1903e80d63
 
 ## 📸 Gallery
 
@@ -545,5 +547,6 @@ This is a learning project, but feedback and suggestions are welcome! Feel free 
 ---
 
 **Built with ❤️ using AWS, Snowflake, and dbt**
+
 
 
